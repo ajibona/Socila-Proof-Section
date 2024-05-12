@@ -1,0 +1,324 @@
+ 
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+/* -- Css Reset -- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* -- Ccs Root -- */
+:root{
+
+    /* -- Primary Color -- */
+    --cc-primary-very-dark-magenta: hsl(300, 43%, 22%); 
+    --cc-primary-soft-pink: hsl(333, 80%, 67%);
+
+    /* -- Neutral color -- */
+    --cc-neutral-dark-graylish-magenta: hsl(303, 10%, 53%);
+    --cc-neutral-light-grayish-magenta: hsl(300, 24%, 96%);
+    --cc-neutral-White: hsl(0, 0%, 100%);
+
+    /* -- Fonts Size -- */
+    --fs-normal-size: 0.95rem;
+
+    /* -- Fonts Family -- */
+    --ff-league-spartan: "League Spartan", sans-serif;
+    
+    /*-- Fonts Weight -- */
+    --fw-light-400: 400;
+    --fw-normal-500: 500;
+    --fw-bold-700: 700;
+
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+    font-size: var(--fs-normal-size);
+    font-family: var(--ff-league-spartan);
+    background-color: var(--cc-neutral-White);   
+}
+
+/* -- Mobile Device -- */
+
+/* -- Shapes Box -- */
+.shapes-top-box{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.shape-bottom-box{
+  position: absolute;
+  z-index: -1;
+  bottom: 20;
+  left: 0;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1.5rem;
+}
+
+.social-card{
+  width: 100%;
+  margin-top: 50px;
+}
+
+.social-card h2{
+  text-align: center;
+  margin-inline: auto;
+  font-size: 2.4rem;
+  width: 250px;
+  margin-bottom: 20px;
+  color: var(--cc-primary-very-dark-magenta);
+}
+
+.rating-comment{
+  margin-inline: auto;
+  text-align: center;
+  font-size: 1.17rem;
+  line-height: 1.4;
+  width: 350px;
+  font-weight: var(--fw-normal-500);
+  color: var(--cc-neutral-dark-graylish-magenta);
+  margin-bottom: 40px;
+}
+
+.five-star-rating{
+  background-color: var(--cc-neutral-light-grayish-magenta);
+  margin-top: 20px;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.rating-images{
+  margin-bottom: 10px;
+}
+
+h3{
+  color: var(--cc-primary-very-dark-magenta);
+}
+
+.user-profile-section{
+  margin-top: 60px;
+}
+
+.profile-card{
+  padding: 2rem;
+  background-color: var(--cc-primary-very-dark-magenta);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.profile-details{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+
+.profile-details img{
+  border-radius: 50%;
+  width: 50px;
+}
+
+.profile-name{
+  margin-left: 20px;
+}
+
+.profile-name h4{
+  color: var(--cc-neutral-White);
+  font-weight: var(--fw-normal-500);
+  font-size: 1.1rem;
+}
+
+.profile-name .status{
+  color: var(--cc-primary-soft-pink);
+  font-weight: var(--fw-normal-500);
+  margin-top: 4px;
+  font-size: 1.1rem;
+  opacity: 70%;
+}
+
+.user-bio{
+  font-size:1.23rem;
+  line-height: 1.3;
+  color: var(--cc-neutral-White);
+}
+
+.shape-desktop-bottom img, .shape-desktop-top img{
+  width: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.attribution a {
+  color: var(--cc-primary-very-dark-magenta);
+}
+
+
+/*-- Desktop Screen -- */
+
+@media only screen and (min-width:768px) {
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 4rem;
+  }
+  
+  .user-rating-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 0;
+  }
+
+  .social-card h2{
+    font-size: 1.6rem;
+    text-align: left;
+    margin-inline: 0;
+    width: 200px;
+   
+  }
+
+  .rating-comment{
+    text-align: left;
+    font-size: 0.7rem;
+    width: 290px;
+  }
+
+  .shape-bottom-box, .shapes-top-box{
+    display: none;
+  }
+
+  .five-star-rating{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 5px;
+    width: 270px;
+  }
+
+  .rating-images{
+    margin: 10px 5px;
+  }
+  .rating-images img{
+    width: 8px;
+
+  }
+
+  h3{
+    font-size: 0.6rem;
+  }
+
+  .rate-one{
+    position: absolute;
+    top: -20px;
+    right: 80px;
+  }
+
+  .rate-two{
+    position: absolute;
+    top: 25px;
+    right: 60px;
+  }
+
+  .rate-three{
+    position: absolute;
+    top: 70px;
+    right: 20px;
+  }
+  .user-profile-section{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1px;
+    position: relative;
+    
+  }
+
+  .profile-details{
+    margin-bottom: 10px;
+  }
+  .profile-details img{
+    width: 20px;
+  }
+
+  .profile-name{
+    margin-left: 10px;
+  }
+  .profile-name h4{
+    font-size: 0.5rem
+  }
+
+  .profile-name .status{
+    font-size: 0.5rem;
+  }
+
+  .user-bio{
+    font-size: 0.6rem;
+  }
+
+  .profile-card{
+    padding: 1rem;
+    margin-right: 20px;
+    height: 120px;
+    width: 200px;
+    border-radius: 5px;
+  }
+
+  .profile-two{
+    position: absolute;
+    top: 10px;
+    left: 220px;
+  }
+  .profile-three{
+    margin-right: 0;
+    position: absolute;
+    top: 20px;
+    right: 0;
+  }
+
+  .shapes-top-box, .shape-bottom-box{
+    display: none;
+  }
+
+  .shape-desktop-top{
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+
+  .shape-desktop-top img{
+   width: 250px;
+  }
+
+  .shape-desktop-bottom{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+  }
+  .shape-desktop-bottom img{
+    width: 550px;
+  }
+
+  }
