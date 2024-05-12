@@ -179,7 +179,7 @@ h3{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    padding: 4rem;
+    padding: 1rem 10rem;
   }
   
   .user-rating-section{
@@ -191,17 +191,18 @@ h3{
   }
 
   .social-card h2{
-    font-size: 1.6rem;
+    font-size: 3.2rem;
     text-align: left;
     margin-inline: 0;
-    width: 200px;
+    width: 400px;
    
   }
 
   .rating-comment{
     text-align: left;
-    font-size: 0.7rem;
-    width: 290px;
+    font-size: 1.1rem;
+    width: 420px;
+    margin-inline: 0;
   }
 
   .shape-bottom-box, .shapes-top-box{
@@ -214,36 +215,37 @@ h3{
     justify-content: center;
     padding: 0;
     border-radius: 5px;
-    width: 270px;
+    width: 350px;
+    padding: 10px;
   }
 
   .rating-images{
     margin: 10px 5px;
   }
   .rating-images img{
-    width: 8px;
+    width: 12px;
 
   }
 
   h3{
-    font-size: 0.6rem;
+    font-size: 1.2rem;
   }
 
   .rate-one{
     position: absolute;
     top: -20px;
-    right: 80px;
+    right: 100px;
   }
 
   .rate-two{
     position: absolute;
-    top: 25px;
+    top: 45px;
     right: 60px;
   }
 
   .rate-three{
     position: absolute;
-    top: 70px;
+    top: 110px;
     right: 20px;
   }
   .user-profile-section{
@@ -256,45 +258,45 @@ h3{
   }
 
   .profile-details{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .profile-details img{
-    width: 20px;
+    width: 40px;
   }
 
   .profile-name{
     margin-left: 10px;
   }
   .profile-name h4{
-    font-size: 0.5rem
+    font-size: 0.8rem
   }
 
   .profile-name .status{
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
 
   .user-bio{
-    font-size: 0.6rem;
+    font-size: 1rem;
   }
 
   .profile-card{
     padding: 1rem;
     margin-right: 20px;
-    height: 120px;
-    width: 200px;
+    height: 190px;
+    width: 300px;
     border-radius: 5px;
   }
 
   .profile-two{
     position: absolute;
     top: 10px;
-    left: 220px;
+    left: 340px;
   }
   .profile-three{
     margin-right: 0;
     position: absolute;
-    top: 20px;
-    right: 0;
+    top: 30px;
+    right: 50px;
   }
 
   .shapes-top-box, .shape-bottom-box{
@@ -308,7 +310,7 @@ h3{
   }
 
   .shape-desktop-top img{
-   width: 250px;
+   width: 530px;
   }
 
   .shape-desktop-bottom{
@@ -318,7 +320,7 @@ h3{
 
   }
   .shape-desktop-bottom img{
-    width: 550px;
+    width: 900px;
   }
 
   }
