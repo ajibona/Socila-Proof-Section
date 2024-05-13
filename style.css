@@ -175,18 +175,13 @@ h3{
 
 @media only screen and (min-width:768px) {
   .container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
     padding: 1rem 10rem;
   }
   
   .user-rating-section{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
     margin-top: 0;
   }
 
@@ -216,11 +211,14 @@ h3{
     padding: 0;
     border-radius: 5px;
     width: 350px;
-    padding: 10px;
+    padding: 1px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    height: 60px;
   }
 
   .rating-images{
-    margin: 10px 5px;
+    margin: 0px 5px;
   }
   .rating-images img{
     width: 12px;
@@ -228,30 +226,27 @@ h3{
   }
 
   h3{
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
-  .rate-one{
-    position: absolute;
-    top: -20px;
-    right: 100px;
+  .star-rating-box{
+    display: grid;
+    grid-template-columns: 1fr;
+   float: right;
   }
-
+  
   .rate-two{
-    position: absolute;
-    top: 45px;
-    right: 60px;
+    margin-left: 40px;
   }
+
 
   .rate-three{
-    position: absolute;
-    top: 110px;
-    right: 20px;
+    margin-left: 80px;
   }
+
   .user-profile-section{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-top: 1px;
     position: relative;
     
@@ -287,17 +282,15 @@ h3{
     border-radius: 5px;
   }
 
+  
   .profile-two{
-    position: absolute;
-    top: 10px;
-    left: 340px;
+    margin-top: 20px;
   }
+  
   .profile-three{
-    margin-right: 0;
-    position: absolute;
-    top: 30px;
-    right: 50px;
+   margin-top: 40px;
   }
+
 
   .shapes-top-box, .shape-bottom-box{
     display: none;
